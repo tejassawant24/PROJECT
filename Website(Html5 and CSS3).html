@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>website using html5 and css3</title>
+        <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+      /*  body{
+            margin: 10px;  
+        }   */
+
+        ul.navigation, ul.sub{
+            list-style-type:none;
+            
+        }
+         
+        ul.navigation li{
+           
+            width: 150px;
+            height: 30px;
+            float: left;
+            margin-right: 10px;
+            border-radius: 20px;
+           border: 2px solid black;
+            
+           }
+        
+
+        ul.navigation{
+             margin-top: 30px;
+               
+        }
+
+
+       div.header{
+           width:100%;
+           height:240px ;
+           background-color:rgb(26, 25, 25);
+           border-radius: 20px;
+        /*   top:75%;
+           left: 0%;
+           position: relative; */
+          
+       } 
+
+      
+        div.header img{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-left: 50px; 
+            margin-top:70px;
+
+            
+        }
+            
+        div.header h1 {
+           /*  position: relative; */
+          /*  top: 18px;          
+             left: 10px;  */
+             color:white;
+             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             font-weight:bolder;
+             font-size: 50px;
+             padding-top:90px;   
+        }
+              
+        ul.navigation li a{
+            display: block;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color:black;
+            text-decoration: none; 
+            border-radius: 20px;
+            
+        }
+        
+        ul.navigation ul.sub{
+            display:none;
+        }
+        
+        ul.navigation li a:hover { 
+            background-color:gray; 
+            color: white; 
+        }
+         
+         ul.navigation :hover ul.sub{
+             display: block;
+         }
+
+         div.container{
+            width: 100%;
+            height:3780px;
+            top:250px;
+            left:0px;
+           /* background-image: url("./image/sale9.gif"); */
+            position: relative;
+        }
+
+        div.sale{
+            width: 100%;
+            height:700px;
+            background-image: url("./image/sale9.gif");
+            background-size: cover;
+            background-position: 50% 50%;
+            }  
+    
+       div.effects{   
+         top: 1670px;
+         left:0px;
+         width: 100%;
+         height:500px;
+         position: absolute;
+         
+         }   
+
+        div.jeans{
+            width:350px;
+            height:500px;
+            background-image: url("./image/website images/jeans effect.jpg");
+           background-position: center center; 
+            background-size:cover;
+            overflow: hidden;
+            
+              }
+        div.shadowj{
+            width:350px;
+            height:500px;
+            background-color:white;
+            opacity: 0.7;
+            top:0px;
+            left:-350px;
+            position:absolute;
+            transition:all 1s ease-in-out 0s;
+        } 
+
+        div.jeans:hover div.shadowj{
+            top:0px;
+            left:0px;
+        }      
+
+
+        div.jeans img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.jeans:hover img{
+            transform:scale(1.5);
+           
+        }
+
+        div.jeans h2{
+            padding-left:150px;
+            line-height: 350px;
+        }
+
+
+
+
+
+
+
+        div.lady{
+            width:350px;
+            height:500px;
+            background-image: url("./image/website images/lady.jpg");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:350px;
+            position:absolute;
+            overflow: hidden;
+    
+        }
+
+        div.shadowl{
+            width:350px;
+            height:500px;
+            background-color:white;
+            opacity: 0.7;
+            top:-500px;
+            left:0px;
+            position:absolute;
+            transition:all 1s ease-in-out 0s;
+        }  
+
+        div.lady:hover div.shadowl{
+            top:0px;
+            left:0px;
+        }   
+
+        
+         div.lady img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.lady:hover img{
+            transform:scale(1.5);
+           
+        }
+
+        div.lady h2{
+            padding-left:150px;
+            line-height: 350px;
+        } 
+
+
+
+
+
+
+
+
+
+        div.men{
+            width:355px;
+            height:500px;
+            background-image: url("./image/website images/men.jpg");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:700px;
+            position:absolute;
+            overflow: hidden;
+        }
+
+        div.shadowm{
+            width:355px;
+            height:500px;
+            background-color:white;
+            opacity: 0.7;
+            top:500px;
+            left:0px;
+            position:absolute;
+            transition:all 1s ease-in-out 0s;
+        }  
+
+        div.men:hover div.shadowm{
+            top:0px;
+            left:0px;
+        }     
+        
+
+        div.men img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.men:hover img{
+            transform:scale(1.5);
+           
+        }
+
+        div.men h2{
+            padding-left:150px;
+            line-height: 350px;
+        }
+
+
+
+
+
+
+
+
+
+        div.men2{
+            width:390px;
+            height:500px;
+            background-image: url("./image/website images/men2.jpg");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:1054px;
+            position:absolute;
+            overflow: hidden;
+            
+        }
+
+        div.shadowm2{
+            width:390px;
+            height:500px;
+            background-color:white;
+            opacity: 0.7;
+            top:0px;
+            left:390px;
+            position:absolute;
+            transition:all 1s ease-in-out 0s; 
+           
+               }  
+        
+        div.men2:hover div.shadowm2{
+            top:0px;
+            left:0px;        
+        }   
+        
+         
+         div.men2 img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.men2:hover img{
+            transform:scale(1.5);
+           
+        }
+
+        div.men2 h2{
+            padding-left:150px;
+            line-height: 350px;
+        }
+
+        div.men2:hover div.shadowm2{
+            top:0px;
+            left:0px;        
+        }   
+
+        
+        
+        
+        div.container3{
+            top:2170px;
+            left:0px;
+            width:100%;
+            height:700px;
+            background-image: url("./image/pexels-photo-1327212.jpeg");
+            position: absolute;
+            background-position: center center;
+            background-size:cover; 
+           
+
+        }    
+
+        div.container4{
+            top:2870px;
+            left:0px;
+            width:100%;
+            height:500px;
+            position: absolute;
+            
+        } 
+
+        div.mengif2{
+            width:350px;
+            height:500px;
+            background-image: url("./image/website images/men gif2.gif");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:0px;
+            position:absolute;
+            transition: transform 0.5s ease-in-out ;
+            overflow: hidden;
+          
+        }
+
+        div.mengif2 img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.mengif2:hover img{
+            transform:scale(1.2);
+           
+        }
+
+        div.mengif2:hover {
+            transform:  translate(50px,50px ); 
+           
+        }  
+
+
+
+
+        div.ladygif{
+            width:350px;
+            height:500px;
+            background-image: url("./image/website images/lady gif 2.gif");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:350px;
+            position:absolute;
+            transition: transform 0.5s ease-in-out ;
+            overflow: hidden;
+           }
+
+           div.ladygif img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.ladygif:hover img{
+            transform:scale(1.1);
+           
+        }
+
+        div.ladygif:hover {
+            transform:  skew(5deg); 
+           
+        }  
+
+
+        div.mengif{
+            width:350px;
+            height:500px;
+            background-image: url("./image/website images/men.gif");
+           background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:700px;
+            position:absolute;
+            transition: transform 0.5s ease-in-out ;
+            overflow: hidden;
+          
+        }
+
+        div.mengif img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.mengif:hover img{
+            transform:scale(1.2);
+           
+        }
+
+        div.mengif:hover {
+            
+            transform: perspective(650px)  rotateX(-10deg);
+           
+        }  
+
+       
+       
+        div.ladygif2{
+            width:390px;
+            height:500px;
+            background-image: url("./image/website images/ssj_rose_goku_black_lsw_sheet_by_qsab101-datptrf.gif");
+            background-position: center center; 
+            background-size:cover;
+            top:0px;
+            left:1050px;
+            position:absolute;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out ;
+        }
+
+        div.ladygif2 img{
+            transition: transform 0.5s ease-in-out 0s;
+         }
+        
+        
+         div.ladygif2:hover img{
+            transform:scale(1.1);
+           
+        }
+
+        div.ladygif2:hover {
+            transform:  translate(-50px,50px );
+           
+        }  
+
+           
+            div.flip{
+            width: 1435px;
+            height: 950px;
+            top:700px;
+            left: 0px;
+            position: absolute;  
+            
+        }   
+   
+        div.front{
+            width:1435px;
+            height:950px;
+            background-image: url("./image/website images/1800-HP-ARTISTCOLLECTION-EN-3.jpg");
+           display: block; 
+            top: 0px;
+            left:0px;
+            position: absolute;
+            transition: transform 1s ease-in-out 0s;
+            transform: perspective(650px) rotateY(0deg);
+            backface-visibility: hidden;
+           
+            }
+
+        div.back{
+          width:1435px;
+          height:950px;
+          display: block; 
+          background-image: url("./image/website images/1800-HP-SUMMERLOOKSWELOVE-EN.jpg");
+          transition: transform 1s ease-in-out 0s;
+          top: 0px;
+          left:0px;
+          position: absolute;
+          transform: perspective(650px) rotateY(180deg);
+          backface-visibility: hidden;
+            }
+
+        div.flip:hover div.front{
+            transform: perspective(650px) rotateY(-180deg);
+
+        }
+
+        div.flip:hover div.back{
+            transform: perspective(650px)  rotateY(0deg);
+        }
+
+        
+        
+        
+
+            
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        div.footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:360px;
+            background-color:black;
+            color: white;
+            text-align: center;
+        }
+
+        div.subscribe{
+            width:500px;
+            height:350px;
+            margin: 0px auto;
+           
+        }
+
+        form.form-validation{
+            width:500px;
+            height:350px;
+            margin: 0px auto;
+            margin-top:10px;
+            background-color:black;
+            font-size: 40px;
+            color: rgb(253, 53, 80);
+            text-align: center;
+        }
+
+        input[type="text"] {
+              width:500px;
+              height: 60px;
+              margin-left:75px;
+              margin-top: 70px;
+              text-transform: uppercase;
+              font-size:20px;
+              font-weight: bold;
+              border:none;
+              outline: none;
+              background-color:transparent;
+              border-bottom: 2px solid rgb(253, 53, 80);
+          }
+
+          button {
+                  width:200px;
+                  height:50px;
+                  margin-top:70px;
+                  margin-left:20px;
+                  background-color:rgb(253, 53, 80);
+                  border:none;
+                  outline: none;
+                  color:white;
+                  font-size:19px;
+                  border-radius: 20px;
+              }
+
+              ::-webkit-input-placeholder{
+              color:rgb(253, 53, 80);
+          }
+
+  
+
+
+
+
+
+
+        
+
+
+
+    
+
+        
+        </style>
+    </head>
+    <body>
+    
+        <div class="header">
+           <img src="./image/tejas logo 3.jpg" alt="logo" >
+            <h1>TEJAS JEANS</h1> 
+         
+            </div>
+       
+        <ul class="navigation"> 
+          
+            <li> 
+                <a href="#">WOMEN</a>
+                <ul class="sub">
+                    <li>
+                        <a href="#">tshirt</a>
+                    </li>
+                    <li>
+                        <a href="#">SHIRTS</a>
+                    </li>
+                    <li>
+                        <a href="#">JACKETS</a>
+                    </li>
+                    <li>
+                        <a href="#">JEANS</a>
+                    </li>
+                    <li>
+                        <a href="#">SWEATERS</a>
+                    </li>
+                    <li>
+                       <a href="#">PANTS</a>
+                    </li>  
+                </ul>              
+                        
+            </li>
+            <li>
+                <a href="#">MEN</a>
+                <ul class="sub">
+                        <li>
+                            <a href="#">tshirt</a>
+                        </li>
+                        <li>
+                            <a href="#">SHIRTS</a>
+                        </li>
+                        <li>
+                            <a href="#">JACKETS</a>
+                        </li>
+                        <li>
+                            <a href="#">JEANS</a>
+                        </li>
+                        <li>
+                            <a href="#">SWEATERS</a>
+                        </li>
+                        <li>
+                           <a href="#">PANTS</a>
+                        </li>  
+                    </ul>              
+                            
+            
+            </li>    
+            <li>
+                <a href="#">DENIM</a>
+                <ul class="sub">
+                        <li>
+                            <a href="#">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#">WOMEN</a>
+                        </li>
+                         
+                    </ul>              
+                            
+            </li>
+            <li>
+                <a href="#">SALE</a>
+                <ul class="sub">
+                        <li>
+                            <a href="#">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#">WOMEN</a>
+                        </li>
+                         
+                    </ul>              
+                            
+
+            </li>
+            <li>
+                <a href="#">FACTORY</a>
+            </li>
+        </ul>
+   
+        <div class="container">
+                <div class="sale"></div> 
+                <div class="flip">
+                   <div class="front"></div>
+                   <div class="back"></div>    
+                </div>
+                <div class="effects">
+                   <div class="jeans">
+                     <img src="./image/website images/jeans effect.jpg" height="100%" width="100%" >
+                     <div class="shadowj">
+                     <h2>likes:56</h2>
+                     </div>
+                    </div>
+                   <div class="lady">
+                     <img src="./image/website images/lady.jpg" height="100%" width="100%" >
+                     <div class="shadowl">
+                     <h2>likes:5000</h2>
+                     </div>
+                   </div>
+                   <div class="men">
+                     <img src="./image/website images/men.jpg" height="100%" width="100%" >
+                     <div class="shadowm">
+                     <h2>likes:102</h2>
+                     </div>    
+                   </div>
+                   <div class="men2">
+                    <img src="./image/website images/men2.jpg" height="100%" width="100%" >
+                    <div class="shadowm2">
+                    <h2>likes:256</h2>
+                    </div>
+                   </div>
+            </div>
+
+                
+            <div class="container3"></div>
+               
+                
+            <div class="container4">
+                    <div class="ladygif">
+                        <img src="./image/website images/lady gif 2.gif" height="100%" width="100%">
+                    </div>
+                    <div class="ladygif2">
+                        <img src="./image/website images/ssj_rose_goku_black_lsw_sheet_by_qsab101-datptrf.gif" height="100%" width="100%">
+                    </div>
+                    <div class="mengif">
+                        <img src="./image/website images/men.gif" height="100%" width="100%">
+                    </div>
+                    <div class="mengif2">
+                        <img src="./image/website images/men gif2.gif" alt="zoom effect" height="100%" width="100%" >
+                    </div>
+            </div>
+
+              
+            <div class="footer">
+                <div class="subscribe">
+                     <form class="form-validation">
+                        <p>Subscribe Us</p>
+                        <input type="text" placeholder="Enter your email id" name="email id">
+                        <button type="submit">Submit</button> 
+                     </form>
+                
+                </div>
+            </div>
+
+        </div>
+
+       
+
+
+    </body>
+</html>
