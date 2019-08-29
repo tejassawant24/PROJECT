@@ -1,0 +1,49 @@
+<div class=" btncontainer">
+  <div class="row">
+    <div class="col-md-2">
+      <button
+        type="button"
+        class="btn btn-large btn-block btn-primary  btn3d"
+        (click)="viewdata = 'Mobile'"
+      >
+        <span class="glyphicon glyphicon-cloud"></span>
+        Mobile
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-large btn-block btn-primary btn3d"
+        (click)="viewdata = 'AC'"
+      >
+        <span class="glyphicon glyphicon-cloud"></span>
+        AC
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-large btn-block btn-primary btn3d"
+        (click)="viewdata = 'Laptop'"
+      >
+        <span class="glyphicon glyphicon-cloud"></span>
+        Laptop
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-large btn-block btn-primary btn3d"
+        (click)="viewdata = 'TV'"
+      >
+        TV
+      </button>
+    </div>
+    <div class="col-md-10" *ngIf="viewdata" [ngSwitch]="viewdata">
+      <app-tv *ngSwitchCase="'TV'"></app-tv>
+
+      <app-ac *ngSwitchCase="'AC'"></app-ac>
+
+      <app-laptop *ngSwitchCase="'Laptop'"></app-laptop>
+
+      <app-Mobile *ngSwitchCase="'Mobile'"></app-Mobile>
+    </div>
+  </div>
+</div>
